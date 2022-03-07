@@ -1,0 +1,23 @@
+{
+  "name": "calculator_assign_d1_u4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tejaswini179/CALCULATOR_Assign_D1_U4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tejaswini179/CALCULATOR_Assign_D1_U4/issues"
+  },
+  "homepage": "https://github.com/Tejaswini179/CALCULATOR_Assign_D1_U4#readme",
+  "dependencies": {
+    "react": "^17.0.2"
+  }
+}

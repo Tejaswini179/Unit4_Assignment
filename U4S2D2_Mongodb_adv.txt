@@ -1,0 +1,1034 @@
+> db.movie.find({" movie_name" :{$eq:"Sahara",}},{" movie_name" :1,"production_year " :1}).pretty()
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a2c"),
+        " movie_name" : "Sahara",
+        "production_year " : 1996
+}
+> db.movie.find({" movie_name" :{$ne:"Sahara",}},{" movie_name" :1,"production_year " :1}).pretty()
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a1a"),
+        " movie_name" : "Black Hole, The",
+        "production_year " : 1994
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a1b"),
+        " movie_name" : "Illegal",
+        "production_year " : 2017
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a1c"),
+        " movie_name" : "Fred & Vinnie",
+        "production_year " : 2019
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a1d"),
+        " movie_name" : "On the Outs",
+        "production_year " : 1993
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a1e"),
+        " movie_name" : "Polar Express, The",
+        "production_year " : 2004
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a1f"),
+        " movie_name" : "Play Motel",
+        "production_year " : 2018
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a20"),
+        " movie_name" : "Man Who Couldn't Say No, The (Mies joka ei osannut sanoa EI)",
+        "production_year " : 1996
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a21"),
+        " movie_name" : "2013 Rock and Roll Hall of Fame Induction Ceremony, The",
+        "production_year " : 2016
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a22"),
+        " movie_name" : "Concert for George, The",
+        "production_year " : 2008
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a23"),
+        " movie_name" : "Thomas Crown Affair, The",
+        "production_year " : 2009
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a24"),
+        " movie_name" : "Pipe Dream",
+        "production_year " : 2020
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a25"),
+        " movie_name" : "La Luna",
+        "production_year " : 2009
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a26"),
+        " movie_name" : "Dressed to Kill",
+        "production_year " : 1997
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a27"),
+        " movie_name" : "Idiot, The (Hakuchi)",
+        "production_year " : 2006
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a28"),
+        " movie_name" : "Caretakers, The",
+        "production_year " : 2001
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a29"),
+        " movie_name" : "Bow, The (Hwal)",
+        "production_year " : 2001
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a2a"),
+        " movie_name" : "I Don't Want to Sleep Alone (Hei yan quan)",
+        "production_year " : 2019
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a2b"),
+        " movie_name" : "Mad Bastards",
+        "production_year " : 1997
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a2d"),
+        " movie_name" : "Last of Sheila, The",
+        "production_year " : 2004
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a2e"),
+        " movie_name" : "Garage, The",
+        "production_year " : 1993
+}
+Type "it" for more
+> db.movie.find({"budget" :{$gte:17000}},{ " movie_name":1,"production_year " :1}).pretty()
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a1a"),
+        " movie_name" : "Black Hole, The",
+        "production_year " : 1994
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a1f"),
+        " movie_name" : "Play Motel",
+        "production_year " : 2018
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a21"),
+        " movie_name" : "2013 Rock and Roll Hall of Fame Induction Ceremony, The",
+        "production_year " : 2016
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a24"),
+        " movie_name" : "Pipe Dream",
+        "production_year " : 2020
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a31"),
+        " movie_name" : "Dear Me",
+        "production_year " : 2004
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a34"),
+        " movie_name" : "Come and Get It",
+        "production_year " : 2007
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a35"),
+        " movie_name" : "Irene in Time",
+        "production_year " : 2010
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a38"),
+        " movie_name" : "For Roseanna (Roseanna's Grave)",
+        "production_year " : 2019
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a39"),
+        " movie_name" : "Glory to the Filmmaker! (Kantoku · Banzai!)",
+        "production_year " : 2020
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a3b"),
+        " movie_name" : "Fox, The",
+        "production_year " : 1990
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a3c"),
+        " movie_name" : "I Am Trying to Break Your Heart",
+        "production_year " : 2008
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a3d"),
+        " movie_name" : "Bullfighter and the Lady",
+        "production_year " : 1999
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a3e"),
+        " movie_name" : "American Mary",
+        "production_year " : 1997
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a40"),
+        " movie_name" : "Blackbird",
+        "production_year " : 1993
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a41"),
+        " movie_name" : "Cool It",
+        "production_year " : 1991
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a46"),
+        " movie_name" : "American Addict",
+        "production_year " : 1999
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a4c"),
+        " movie_name" : "Heldorado",
+        "production_year " : 2010
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a50"),
+        " movie_name" : "Sudden Wealth of the Poor People of Kombach, The (Der plötzliche Reichtum der armen Leute von Kombach)",
+        "production_year " : 2008
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a52"),
+        " movie_name" : "Death Race 3: Inferno",
+        "production_year " : 2018
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a56"),
+        " movie_name" : "I Declare War",
+        "production_year " : 2010
+}
+Type "it" for more
+> db.movie.find({"budget" :{$lte:17000}},{ " movie_name":1,"production_year " :1}).pretty()
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a1b"),
+        " movie_name" : "Illegal",
+        "production_year " : 2017
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a1c"),
+        " movie_name" : "Fred & Vinnie",
+        "production_year " : 2019
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a1d"),
+        " movie_name" : "On the Outs",
+        "production_year " : 1993
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a1e"),
+        " movie_name" : "Polar Express, The",
+        "production_year " : 2004
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a20"),
+        " movie_name" : "Man Who Couldn't Say No, The (Mies joka ei osannut sanoa EI)",
+        "production_year " : 1996
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a22"),
+        " movie_name" : "Concert for George, The",
+        "production_year " : 2008
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a23"),
+        " movie_name" : "Thomas Crown Affair, The",
+        "production_year " : 2009
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a25"),
+        " movie_name" : "La Luna",
+        "production_year " : 2009
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a26"),
+        " movie_name" : "Dressed to Kill",
+        "production_year " : 1997
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a27"),
+        " movie_name" : "Idiot, The (Hakuchi)",
+        "production_year " : 2006
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a28"),
+        " movie_name" : "Caretakers, The",
+        "production_year " : 2001
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a29"),
+        " movie_name" : "Bow, The (Hwal)",
+        "production_year " : 2001
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a2a"),
+        " movie_name" : "I Don't Want to Sleep Alone (Hei yan quan)",
+        "production_year " : 2019
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a2b"),
+        " movie_name" : "Mad Bastards",
+        "production_year " : 1997
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a2c"),
+        " movie_name" : "Sahara",
+        "production_year " : 1996
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a2d"),
+        " movie_name" : "Last of Sheila, The",
+        "production_year " : 2004
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a2e"),
+        " movie_name" : "Garage, The",
+        "production_year " : 1993
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a2f"),
+        " movie_name" : "Arthur Newman",
+        "production_year " : 2007
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a30"),
+        " movie_name" : "Winter in Wartime",
+        "production_year " : 2003
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a32"),
+        " movie_name" : "Herb & Dorothy",
+        "production_year " : 1998
+}
+Type "it" for more
+> db.movie.find({$and:[{"budget" :{$gt:10000}},{"production_year ":{$gt:2000}}]},{ " movie_name":1,"production_year " :1}).pretty()
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a1b"),
+        " movie_name" : "Illegal",
+        "production_year " : 2017
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a1c"),
+        " movie_name" : "Fred & Vinnie",
+        "production_year " : 2019
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a1e"),
+        " movie_name" : "Polar Express, The",
+        "production_year " : 2004
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a1f"),
+        " movie_name" : "Play Motel",
+        "production_year " : 2018
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a21"),
+        " movie_name" : "2013 Rock and Roll Hall of Fame Induction Ceremony, The",
+        "production_year " : 2016
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a22"),
+        " movie_name" : "Concert for George, The",
+        "production_year " : 2008
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a23"),
+        " movie_name" : "Thomas Crown Affair, The",
+        "production_year " : 2009
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a24"),
+        " movie_name" : "Pipe Dream",
+        "production_year " : 2020
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a25"),
+        " movie_name" : "La Luna",
+        "production_year " : 2009
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a27"),
+        " movie_name" : "Idiot, The (Hakuchi)",
+        "production_year " : 2006
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a28"),
+        " movie_name" : "Caretakers, The",
+        "production_year " : 2001
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a29"),
+        " movie_name" : "Bow, The (Hwal)",
+        "production_year " : 2001
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a2a"),
+        " movie_name" : "I Don't Want to Sleep Alone (Hei yan quan)",
+        "production_year " : 2019
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a2d"),
+        " movie_name" : "Last of Sheila, The",
+        "production_year " : 2004
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a2f"),
+        " movie_name" : "Arthur Newman",
+        "production_year " : 2007
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a30"),
+        " movie_name" : "Winter in Wartime",
+        "production_year " : 2003
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a31"),
+        " movie_name" : "Dear Me",
+        "production_year " : 2004
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a33"),
+        " movie_name" : "China Blue",
+        "production_year " : 2013
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a34"),
+        " movie_name" : "Come and Get It",
+        "production_year " : 2007
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a35"),
+        " movie_name" : "Irene in Time",
+        "production_year " : 2010
+}
+Type "it" for more
+> db.movie.find({$or:[{"budget" :{$gt:10000}},{"production_year ":{$gt:2000}}]},{ " movie_name":1,"production_year " :1}).pretty()
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a1a"),
+        " movie_name" : "Black Hole, The",
+        "production_year " : 1994
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a1b"),
+        " movie_name" : "Illegal",
+        "production_year " : 2017
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a1c"),
+        " movie_name" : "Fred & Vinnie",
+        "production_year " : 2019
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a1d"),
+        " movie_name" : "On the Outs",
+        "production_year " : 1993
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a1e"),
+        " movie_name" : "Polar Express, The",
+        "production_year " : 2004
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a1f"),
+        " movie_name" : "Play Motel",
+        "production_year " : 2018
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a21"),
+        " movie_name" : "2013 Rock and Roll Hall of Fame Induction Ceremony, The",
+        "production_year " : 2016
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a22"),
+        " movie_name" : "Concert for George, The",
+        "production_year " : 2008
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a23"),
+        " movie_name" : "Thomas Crown Affair, The",
+        "production_year " : 2009
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a24"),
+        " movie_name" : "Pipe Dream",
+        "production_year " : 2020
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a25"),
+        " movie_name" : "La Luna",
+        "production_year " : 2009
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a26"),
+        " movie_name" : "Dressed to Kill",
+        "production_year " : 1997
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a27"),
+        " movie_name" : "Idiot, The (Hakuchi)",
+        "production_year " : 2006
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a28"),
+        " movie_name" : "Caretakers, The",
+        "production_year " : 2001
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a29"),
+        " movie_name" : "Bow, The (Hwal)",
+        "production_year " : 2001
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a2a"),
+        " movie_name" : "I Don't Want to Sleep Alone (Hei yan quan)",
+        "production_year " : 2019
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a2b"),
+        " movie_name" : "Mad Bastards",
+        "production_year " : 1997
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a2c"),
+        " movie_name" : "Sahara",
+        "production_year " : 1996
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a2d"),
+        " movie_name" : "Last of Sheila, The",
+        "production_year " : 2004
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a2e"),
+        " movie_name" : "Garage, The",
+        "production_year " : 1993
+}
+Type "it" for more
+> db.movie.find({$nor:[{"budget" :{$gt:10000}},{"production_year ":{$gt:2000}}]},{ " movie_name":1,"production_year " :1}).pretty()
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a20"),
+        " movie_name" : "Man Who Couldn't Say No, The (Mies joka ei osannut sanoa EI)",
+        "production_year " : 1996
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a43"),
+        " movie_name" : "Crimson Wing: Mystery of the Flamingos, The",
+        "production_year " : 1998
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a75"),
+        " movie_name" : "Destricted",
+        "production_year " : 1994
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884aa6"),
+        " movie_name" : "Rambo: First Blood Part II",
+        "production_year " : 1994
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884ab4"),
+        " movie_name" : "It's Christmastime Again, Charlie Brown",
+        "production_year " : 1998
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884aba"),
+        " movie_name" : "Blot, The",
+        "production_year " : 2000
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884acd"),
+        " movie_name" : "Cop and ½",
+        "production_year " : 1997
+}
+{
+        "_id" : ObjectId("6227bab7e6a8a0bbf7884ae5"),
+        " movie_name" : "Godard's Passion (Passion)",
+        "production_year " : 1996
+}
+{
+        "_id" : ObjectId("6227bab7e6a8a0bbf7884b11"),
+        " movie_name" : "Order, The",
+        "production_year " : 1995
+}
+{
+        "_id" : ObjectId("6227bab7e6a8a0bbf7884b38"),
+        " movie_name" : "Games",
+        "production_year " : 1998
+}
+{
+        "_id" : ObjectId("6227bab7e6a8a0bbf7884b4f"),
+        " movie_name" : "Two-Way Stretch",
+        "production_year " : 1994
+}
+{
+        "_id" : ObjectId("6227bab7e6a8a0bbf7884b64"),
+        " movie_name" : "Skirt Day (La journée de la jupe)",
+        "production_year " : 1990
+}
+{
+        "_id" : ObjectId("6227bab7e6a8a0bbf7884b72"),
+        " movie_name" : "Home Movie",
+        "production_year " : 1999
+}
+{
+        "_id" : ObjectId("6227bab7e6a8a0bbf7884b85"),
+        " movie_name" : "Of Mice and Men",
+        "production_year " : 1990
+}
+{
+        "_id" : ObjectId("6227bab7e6a8a0bbf7884b91"),
+        " movie_name" : "Adventures of a Dentist",
+        "production_year " : 1990
+}
+{
+        "_id" : ObjectId("6227bab7e6a8a0bbf7884b9d"),
+        " movie_name" : "Heart of a Lion (Leijonasydän)",
+        "production_year " : 1998
+}
+
+> db.movie.find({$or:[{"budget" :{$ne:10000}},{"production_year ":{$ne:2000}}]},{ " movie_name":1,"production_year " :1}).pretty()
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a1a"),
+        " movie_name" : "Black Hole, The",
+        "production_year " : 1994
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a1b"),
+        " movie_name" : "Illegal",
+        "production_year " : 2017
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a1c"),
+        " movie_name" : "Fred & Vinnie",
+        "production_year " : 2019
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a1d"),
+        " movie_name" : "On the Outs",
+        "production_year " : 1993
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a1e"),
+        " movie_name" : "Polar Express, The",
+        "production_year " : 2004
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a1f"),
+        " movie_name" : "Play Motel",
+        "production_year " : 2018
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a20"),
+        " movie_name" : "Man Who Couldn't Say No, The (Mies joka ei osannut sanoa EI)",
+        "production_year " : 1996
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a21"),
+        " movie_name" : "2013 Rock and Roll Hall of Fame Induction Ceremony, The",
+        "production_year " : 2016
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a22"),
+        " movie_name" : "Concert for George, The",
+        "production_year " : 2008
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a23"),
+        " movie_name" : "Thomas Crown Affair, The",
+        "production_year " : 2009
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a24"),
+        " movie_name" : "Pipe Dream",
+        "production_year " : 2020
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a25"),
+        " movie_name" : "La Luna",
+        "production_year " : 2009
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a26"),
+        " movie_name" : "Dressed to Kill",
+        "production_year " : 1997
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a27"),
+        " movie_name" : "Idiot, The (Hakuchi)",
+        "production_year " : 2006
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a28"),
+        " movie_name" : "Caretakers, The",
+        "production_year " : 2001
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a29"),
+        " movie_name" : "Bow, The (Hwal)",
+        "production_year " : 2001
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a2a"),
+        " movie_name" : "I Don't Want to Sleep Alone (Hei yan quan)",
+        "production_year " : 2019
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a2b"),
+        " movie_name" : "Mad Bastards",
+        "production_year " : 1997
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a2c"),
+        " movie_name" : "Sahara",
+        "production_year " : 1996
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a2d"),
+        " movie_name" : "Last of Sheila, The",
+        "production_year " : 2004
+}
+Type "it" for more
+> db.movie.find({$and:[{"production_year ":{$gte:2000}},{"production_year ":{$lte:2010}}]},{ " movie_name":1,"production_year " :1}).pretty()
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a1e"),
+        " movie_name" : "Polar Express, The",
+        "production_year " : 2004
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a22"),
+        " movie_name" : "Concert for George, The",
+        "production_year " : 2008
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a23"),
+        " movie_name" : "Thomas Crown Affair, The",
+        "production_year " : 2009
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a25"),
+        " movie_name" : "La Luna",
+        "production_year " : 2009
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a27"),
+        " movie_name" : "Idiot, The (Hakuchi)",
+        "production_year " : 2006
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a28"),
+        " movie_name" : "Caretakers, The",
+        "production_year " : 2001
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a29"),
+        " movie_name" : "Bow, The (Hwal)",
+        "production_year " : 2001
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a2d"),
+        " movie_name" : "Last of Sheila, The",
+        "production_year " : 2004
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a2f"),
+        " movie_name" : "Arthur Newman",
+        "production_year " : 2007
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a30"),
+        " movie_name" : "Winter in Wartime",
+        "production_year " : 2003
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a31"),
+        " movie_name" : "Dear Me",
+        "production_year " : 2004
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a34"),
+        " movie_name" : "Come and Get It",
+        "production_year " : 2007
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a35"),
+        " movie_name" : "Irene in Time",
+        "production_year " : 2010
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a36"),
+        " movie_name" : "Puppetry of the Penis: Live at the Forum (Puppetry of the Penis: The Ancient Art of Genital Origami)",
+        "production_year " : 2004
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a3c"),
+        " movie_name" : "I Am Trying to Break Your Heart",
+        "production_year " : 2008
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a4c"),
+        " movie_name" : "Heldorado",
+        "production_year " : 2010
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a50"),
+        " movie_name" : "Sudden Wealth of the Poor People of Kombach, The (Der plötzliche Reichtum der armen Leute von Kombach)",
+        "production_year " : 2008
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a51"),
+        " movie_name" : "Police",
+        "production_year " : 2004
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a55"),
+        " movie_name" : "Hoodwinked Too! Hood vs. Evil",
+        "production_year " : 2006
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a56"),
+        " movie_name" : "I Declare War",
+        "production_year " : 2010
+}
+Type "it" for more
+> db.movie.find({$or:[{"budget" :{$ne:10000}},{"production_year ":{$ne:2000}}]},{ " movie_name":1,"production_year " :1}).pretty()
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a1a"),
+        " movie_name" : "Black Hole, The",
+        "production_year " : 1994
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a1b"),
+        " movie_name" : "Illegal",
+        "production_year " : 2017
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a1c"),
+        " movie_name" : "Fred & Vinnie",
+        "production_year " : 2019
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a1d"),
+        " movie_name" : "On the Outs",
+        "production_year " : 1993
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a1e"),
+        " movie_name" : "Polar Express, The",
+        "production_year " : 2004
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a1f"),
+        " movie_name" : "Play Motel",
+        "production_year " : 2018
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a20"),
+        " movie_name" : "Man Who Couldn't Say No, The (Mies joka ei osannut sanoa EI)",
+        "production_year " : 1996
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a21"),
+        " movie_name" : "2013 Rock and Roll Hall of Fame Induction Ceremony, The",
+        "production_year " : 2016
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a22"),
+        " movie_name" : "Concert for George, The",
+        "production_year " : 2008
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a23"),
+        " movie_name" : "Thomas Crown Affair, The",
+        "production_year " : 2009
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a24"),
+        " movie_name" : "Pipe Dream",
+        "production_year " : 2020
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a25"),
+        " movie_name" : "La Luna",
+        "production_year " : 2009
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a26"),
+        " movie_name" : "Dressed to Kill",
+        "production_year " : 1997
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a27"),
+        " movie_name" : "Idiot, The (Hakuchi)",
+        "production_year " : 2006
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a28"),
+        " movie_name" : "Caretakers, The",
+        "production_year " : 2001
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a29"),
+        " movie_name" : "Bow, The (Hwal)",
+        "production_year " : 2001
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a2a"),
+        " movie_name" : "I Don't Want to Sleep Alone (Hei yan quan)",
+        "production_year " : 2019
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a2b"),
+        " movie_name" : "Mad Bastards",
+        "production_year " : 1997
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a2c"),
+        " movie_name" : "Sahara",
+        "production_year " : 1996
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a2d"),
+        " movie_name" : "Last of Sheila, The",
+        "production_year " : 2004
+}
+Type "it" for more
+> db.movie.find({},{ " movie_name" : 1,"production_year " : 1991}).sort({ " movie_name" : 1},{"production_year " : 1991}).pretty()
+{
+        "_id" : ObjectId("6227bab7e6a8a0bbf7884ae8"),
+        " movie_name" : "10.5",
+        "production_year " : 2009
+}
+{
+        "_id" : ObjectId("6227bab7e6a8a0bbf7884af1"),
+        " movie_name" : "13 Fighting Men",
+        "production_year " : 2014
+}
+{
+        "_id" : ObjectId("6227bab7e6a8a0bbf7884bd5"),
+        " movie_name" : "15 Minutes",
+        "production_year " : 1992
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a21"),
+        " movie_name" : "2013 Rock and Roll Hall of Fame Induction Ceremony, The",
+        "production_year " : 2016
+}
+{
+        "_id" : ObjectId("6227bab7e6a8a0bbf7884b74"),
+        " movie_name" : "6 Days to Air: The Making of South Park",
+        "production_year " : 1999
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a7f"),
+        " movie_name" : "A Man Called Magnum",
+        "production_year " : 1996
+}
+{
+        "_id" : ObjectId("6227bab7e6a8a0bbf7884bc8"),
+        " movie_name" : "A Run for Your Money",
+        "production_year " : 1994
+}
+{
+        "_id" : ObjectId("6227bab7e6a8a0bbf7884b09"),
+        " movie_name" : "Abouna",
+        "production_year " : 2014
+}
+{
+        "_id" : ObjectId("6227bab7e6a8a0bbf7884b60"),
+        " movie_name" : "Accidental Husband, The",
+        "production_year " : 2020
+}
+{
+        "_id" : ObjectId("6227bab7e6a8a0bbf7884b6d"),
+        " movie_name" : "Act of Seeing with One's Own Eyes, The ",
+        "production_year " : 2018
+}
+{
+        "_id" : ObjectId("6227bab7e6a8a0bbf7884bbe"),
+        " movie_name" : "Adam's Rib",
+        "production_year " : 2012
+}
+{
+        "_id" : ObjectId("6227bab7e6a8a0bbf7884b91"),
+        " movie_name" : "Adventures of a Dentist",
+        "production_year " : 1990
+}
+{
+        "_id" : ObjectId("6227bab7e6a8a0bbf7884af6"),
+        " movie_name" : "Alice in Wonderland",
+        "production_year " : 2004
+}
+{
+        "_id" : ObjectId("6227bab7e6a8a0bbf7884b06"),
+        " movie_name" : "Alice in Wonderland",
+        "production_year " : 1990
+}
+{
+        "_id" : ObjectId("6227bab7e6a8a0bbf7884bb5"),
+        " movie_name" : "Alien Abduction",
+        "production_year " : 2015
+}
+{
+        "_id" : ObjectId("6227bab7e6a8a0bbf7884b5d"),
+        " movie_name" : "Alive Day Memories: Home from Iraq (Occupation Iraq)",
+        "production_year " : 1998
+}
+{
+        "_id" : ObjectId("6227bab7e6a8a0bbf7884b3d"),
+        " movie_name" : "All the King's Men",
+        "production_year " : 2001
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a46"),
+        " movie_name" : "American Addict",
+        "production_year " : 1999
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a3e"),
+        " movie_name" : "American Mary",
+        "production_year " : 1997
+}
+{
+        "_id" : ObjectId("6227bab7e6a8a0bbf7884bac"),
+        " movie_name" : "And Then There Was You",
+        "production_year " : 2019
+}
+Type "it" for more
+> db.movie.find({},{ " movie_name" : 1,"production_year " : 1}).skip(10).limit(5).pretty()
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a24"),
+        " movie_name" : "Pipe Dream",
+        "production_year " : 2020
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a25"),
+        " movie_name" : "La Luna",
+        "production_year " : 2009
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a26"),
+        " movie_name" : "Dressed to Kill",
+        "production_year " : 1997
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a27"),
+        " movie_name" : "Idiot, The (Hakuchi)",
+        "production_year " : 2006
+}
+{
+        "_id" : ObjectId("6227bab6e6a8a0bbf7884a28"),
+        " movie_name" : "Caretakers, The",
+        "production_year " : 2001
+}
+>
+

@@ -1,0 +1,233 @@
+> use assignment
+switched to db assignment
+> db.assignment.insert({"first_name":"Tejaswini"})
+WriteResult({ "nInserted" : 1 })
+> db.assignment.insert({"first_name":"Tejaswini","last_name":"khengare","email":"tejaswini@email.com","gender":"female","ip_address":112,"age":20})
+WriteResult({ "nInserted" : 1 })
+> db.assignment.find({}).pretty()
+{
+        "_id" : ObjectId("6226303265f809318c7d662a"),
+        "first_name" : "Tejaswini",
+        "last_name" : "khengare",
+        "email" : "tejaswini@email.com",
+        "gender" : "female",
+        "ip_address" : 112,
+        "age" : 20
+}
+>  db.assignment.insertMany([{"first_name":"Shweta","last_name":"ovhal","email":"shweta@email.com","gender":"female","ip_address":112,"age":22},
+... {"first_name":"Meghna","last_name":"salke","email":"meghna@email.com","gender":"female","ip_address":113,"age":23},
+... {"first_name":"Rucha","last_name":"bidwai","email":"rucha@email.com","gender":"female","ip_address":114,"age":18},
+... {"first_name":"Neha","last_name":"salke","email":"neha@email.com","gender":"female","ip_address":115,"age":22},
+... {"first_name":"swamini","last_name":"deshmukh","email":"swamini@email.com","gender":"female","ip_address":116,"age":28},
+... {"first_name":"Rutuja","last_name":"Tajne","email":"rutuja@email.com","gender":"female","ip_address":117,"age":32},
+... {"first_name":"Akshada","last_name":"kate","email":"akshada@email.com","gender":"female","ip_address":118,"age":35},
+... {"first_name":"Sonali","last_name":"suware","email":"sonali@email.com","gender":"female","ip_address":119,"age":22},
+... {"first_name":"Vaishnavi","last_name":"ovhal","email":"vaishnavi@email.com","gender":"female","ip_address":110,"age":20},])
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("6226578a65f809318c7d662b"),
+                ObjectId("6226578a65f809318c7d662c"),
+                ObjectId("6226578a65f809318c7d662d"),
+                ObjectId("6226578a65f809318c7d662e"),
+                ObjectId("6226578a65f809318c7d662f"),
+                ObjectId("6226578a65f809318c7d6630"),
+                ObjectId("6226578a65f809318c7d6631"),
+                ObjectId("6226578a65f809318c7d6632"),
+                ObjectId("6226578a65f809318c7d6633")
+        ]
+}
+> db.assignment.find({}).pretty()
+{
+        "_id" : ObjectId("6226303265f809318c7d662a"),
+        "first_name" : "Tejaswini",
+        "last_name" : "khengare",
+        "email" : "tejaswini@email.com",
+        "gender" : "female",
+        "ip_address" : 112,
+        "age" : 20
+}
+{
+        "_id" : ObjectId("6226578a65f809318c7d662b"),
+        "first_name" : "Shweta",
+        "last_name" : "ovhal",
+        "email" : "shweta@email.com",
+        "gender" : "female",
+        "ip_address" : 112,
+        "age" : 22
+}
+{
+        "_id" : ObjectId("6226578a65f809318c7d662c"),
+        "first_name" : "Meghna",
+        "last_name" : "salke",
+        "email" : "meghna@email.com",
+        "gender" : "female",
+        "ip_address" : 113,
+        "age" : 23
+}
+{
+        "_id" : ObjectId("6226578a65f809318c7d662d"),
+        "first_name" : "Rucha",
+        "last_name" : "bidwai",
+        "email" : "rucha@email.com",
+        "gender" : "female",
+        "ip_address" : 114,
+        "age" : 18
+}
+{
+        "_id" : ObjectId("6226578a65f809318c7d662e"),
+        "first_name" : "Neha",
+        "last_name" : "salke",
+        "email" : "neha@email.com",
+        "gender" : "female",
+        "ip_address" : 115,
+        "age" : 22
+}
+{
+        "_id" : ObjectId("6226578a65f809318c7d662f"),
+        "first_name" : "swamini",
+        "last_name" : "deshmukh",
+        "email" : "swamini@email.com",
+        "gender" : "female",
+        "ip_address" : 116,
+        "age" : 28
+}
+{
+        "_id" : ObjectId("6226578a65f809318c7d6630"),
+        "first_name" : "Rutuja",
+        "last_name" : "Tajne",
+        "email" : "rutuja@email.com",
+        "gender" : "female",
+        "ip_address" : 117,
+        "age" : 32
+}
+{
+        "_id" : ObjectId("6226578a65f809318c7d6631"),
+        "first_name" : "Akshada",
+        "last_name" : "kate",
+        "email" : "akshada@email.com",
+        "gender" : "female",
+        "ip_address" : 118,
+        "age" : 35
+}
+{
+        "_id" : ObjectId("6226578a65f809318c7d6632"),
+        "first_name" : "Sonali",
+        "last_name" : "suware",
+        "email" : "sonali@email.com",
+        "gender" : "female",
+        "ip_address" : 119,
+        "age" : 22
+}
+{
+        "_id" : ObjectId("6226578a65f809318c7d6633"),
+        "first_name" : "Vaishnavi",
+        "last_name" : "ovhal",
+        "email" : "vaishnavi@email.com",
+        "gender" : "female",
+        "ip_address" : 110,
+        "age" : 20
+}
+> db.assignment.update({"first_name" : "Vaishnavi",}{$set:{"last_name" : "patil"})
+...  db.assignment.update({"first_name" : "Vaishnavi",}{$set:{"last_name" : "patil"}})
+...  db.assignment.update({"first_name" : "Vaishnavi"},{$set:{"last_name" : "patil"})
+...  db.assignment.update({"first_name" : "Vaishnavi"},{$set: {"last_name" : "patil"}})
+... db.assignment.update({"first_name" : "Vaishnavi"},{$set: {"city" : "pune"}})
+... db.assignment.update({"first_name":"Vaishnavi"},{$set: {"last_name" : "patil"}})
+... db.assignment.update({"first_name":"Vaishnavi"},{$set: {"last_name":"patil"}})
+... db.assignment.find({}).pretty()
+... ^C
+
+> db.assignment.update({"first_name" : "Vaishnavi"},{$set: {"last_name" : "patil"}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> db.assignment.find({"first_name" : "Vaishnavi"}).pretty()
+{
+        "_id" : ObjectId("6226578a65f809318c7d6633"),
+        "first_name" : "Vaishnavi",
+        "last_name" : "patil",
+        "email" : "vaishnavi@email.com",
+        "gender" : "female",
+        "ip_address" : 110,
+        "age" : 20
+}
+> db.assignment.updateMany({"age":22},{$set: {"eligible":true}})
+{ "acknowledged" : true, "matchedCount" : 3, "modifiedCount" : 3 }
+> db.assignment.remove("first_name" : "Rutuja")
+uncaught exception: SyntaxError: missing ) after argument list :
+@(shell):1:34
+> db.assignment.remove({"first_name" : "Rutuja"})
+WriteResult({ "nRemoved" : 1 })
+> db.assignment.delete()
+uncaught exception: TypeError: db.assignment.delete is not a function :
+@(shell):1:1
+> db.assignment.delete({"_id" : ObjectId("6226578a65f809318c7d662f")})
+uncaught exception: TypeError: db.assignment.delete is not a function :
+@(shell):1:1
+> db.assignment.deleteOne()
+uncaught exception: Error: find() requires query criteria :
+Bulk/this.find@src/mongo/shell/bulk_api.js:804:23
+DBCollection.prototype.deleteOne@src/mongo/shell/crud_api.js:363:20
+@(shell):1:1
+> db.assignment.deleteOne({"_id" : ObjectId("6226578a65f809318c7d662f")})
+{ "acknowledged" : true, "deletedCount" : 1 }
+> db.assignment.deleteMany({"last_name" : "salke",})
+{ "acknowledged" : true, "deletedCount" : 2 }
+> db.assignment.find({}).pretty()
+{
+        "_id" : ObjectId("6226303265f809318c7d662a"),
+        "first_name" : "Tejaswini",
+        "last_name" : "khengare",
+        "email" : "tejaswini@email.com",
+        "gender" : "female",
+        "ip_address" : 112,
+        "age" : 20
+}
+{
+        "_id" : ObjectId("6226578a65f809318c7d662b"),
+        "first_name" : "Shweta",
+        "last_name" : "ovhal",
+        "email" : "shweta@email.com",
+        "gender" : "female",
+        "ip_address" : 112,
+        "age" : 22,
+        "eligible" : true
+}
+{
+        "_id" : ObjectId("6226578a65f809318c7d662d"),
+        "first_name" : "Rucha",
+        "last_name" : "bidwai",
+        "email" : "rucha@email.com",
+        "gender" : "female",
+        "ip_address" : 114,
+        "age" : 18
+}
+{
+        "_id" : ObjectId("6226578a65f809318c7d6631"),
+        "first_name" : "Akshada",
+        "last_name" : "kate",
+        "email" : "akshada@email.com",
+        "gender" : "female",
+        "ip_address" : 118,
+        "age" : 35
+}
+{
+        "_id" : ObjectId("6226578a65f809318c7d6632"),
+        "first_name" : "Sonali",
+        "last_name" : "suware",
+        "email" : "sonali@email.com",
+        "gender" : "female",
+        "ip_address" : 119,
+        "age" : 22,
+        "eligible" : true
+}
+{
+        "_id" : ObjectId("6226578a65f809318c7d6633"),
+        "first_name" : "Vaishnavi",
+        "last_name" : "patil",
+        "email" : "vaishnavi@email.com",
+        "gender" : "female",
+        "ip_address" : 110,
+        "age" : 20
+}
+> db.assignment.drop()
+true

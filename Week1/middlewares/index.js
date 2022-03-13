@@ -27,11 +27,11 @@ function allBooks(req,res,next){
 
 function singleBook(req,res,next){
 
-    if(req.params.name=="HarryPotter")
+    if(req.params.name=="Fear Not: Be Strong ")
     {
         req.name = req.params.name
     }
-    else if(req.params.name=="GameOfThrones")
+    else if(req.params.name=="Believe in Yourself")
     {
         req.name=req.params.name
     }

@@ -33,7 +33,7 @@ router.post(
     .isNumeric()
     .withMessage("Age must be a number between 1 and 120")
     .custom((val) => {
-      if (val < 1 || val > 120) {
+      if (val < 1 || val > 100) {
         throw new Error("Incorrect age provided");
       }
       return true;
